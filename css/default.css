@@ -1,1 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;1,500&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Murecho:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #06000B;
+    color: white;
+}
+
+:root {
+    --primary-color: #AD00FF;
+    --secondary-color: #0039A8;
+    --third-color: #CC07AD;
+    --font-size-text: 1.13em;
+    --font-size-subtitle: 2.50em;
+    --transition: all .3s linear;
+    --border-radius: 25px;
+    --max-width: 96.88em;
+    --centered: 0 auto;
+}
