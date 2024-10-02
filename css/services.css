@@ -19,6 +19,12 @@
     margin-bottom: 60px;
 }
 
+@media(max-width: 576px) {
+    .services__title {
+        font-size: 2em;
+    }
+}
+
 .surrounds-services-item {
     overflow: hidden;
     position: relative;
