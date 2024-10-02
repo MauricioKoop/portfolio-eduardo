@@ -2,6 +2,7 @@
     max-width: var(--max-width);
     margin: var(--centered);
     position: relative;
+    padding: 0 50px;
 }
 
 .main-info__left {
@@ -18,6 +19,13 @@
     max-width: 1250px;
     margin: var(--centered);
     column-gap: 120px;
+}
+
+@media(max-width: 767px) {
+    .main-info {
+        flex-wrap: wrap;
+        gap: 100px;
+    }
 }
 
 .main-info__title {
@@ -75,6 +83,33 @@
     background: transparent;
     color: white;
     border: 2px solid white;
+}
+
+@media(max-width: 450px) {
+    .main-info__buttons {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 576px) {
+    .main-info__title {
+        font-size: 2em;
+    }
+
+    .main-info__subtitle {
+        font-size: 1em;
+    }
+
+    .main-info__text {
+        font-size: 14px;
+    }
+
+    .main-info__button {
+        padding: 15px 0;
+        max-width: 150px;
+        font-size: 1em;
+    }
+
 }
 
 .main-info__img {
