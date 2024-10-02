@@ -1,0 +1,5 @@
+#main-section {
+    max-width: var(--max-width);
+    margin: var(--centered);
+    position: relative;
+}
