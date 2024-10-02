@@ -23,7 +23,7 @@ body {
     --primary-color: #AD00FF;
     --secondary-color: #0039A8;
     --third-color: #CC07AD;
-    --font-size-text: 1.13em;
+    --font-size-text: 1em;
     --font-size-subtitle: 2.50em;
     --transition: all .3s linear;
     --border-radius: 50px;
