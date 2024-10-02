@@ -10,7 +10,6 @@
     padding: 0 50px;
     background: rgba(210, 210, 210, .21);
     background-size: cover;
-    height: 100vh;
     z-index: 2;
 }
 
@@ -131,6 +130,7 @@
     margin: var(--centered);
     display: flex;
     gap: 30px;
+    padding-bottom: 80px;
 }
 
 @media(max-width: 1250px) {
