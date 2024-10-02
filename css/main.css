@@ -14,7 +14,7 @@
 .main-info {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     padding-top: 200px;
     max-width: 1250px;
     margin: var(--centered);
@@ -25,6 +25,7 @@
     .main-info {
         flex-wrap: wrap;
         gap: 100px;
+        padding-top: 100px;
     }
 }
 
@@ -56,7 +57,7 @@
 
 .main-info__buttons {
     order: 4;
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     gap: 20px;
 }
@@ -68,7 +69,7 @@
     outline: none;
     background: white;
     max-width: 180px;
-    padding: 20px 0;
+    padding: 15px 0;
     width: 100%;
     border-radius: var(--border-radius);
     cursor: pointer;
@@ -105,7 +106,6 @@
     }
 
     .main-info__button {
-        padding: 15px 0;
         max-width: 150px;
         font-size: 1em;
     }
@@ -117,3 +117,29 @@
     object-fit: cover;
 }
 
+.main-section__tools {
+    max-width: 1250px;
+    margin: var(--centered);
+    display: flex;
+    gap: 30px;
+}
+
+@media(max-width: 1250px) {
+    .main-section__tools {
+        padding-top: 100px;
+    }
+}
+
+.main-section__tools-list {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-section__tools-info {
+    font-family: "Murecho", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
