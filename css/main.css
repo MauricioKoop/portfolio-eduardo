@@ -1,8 +1,17 @@
+.surrounds-main-section {
+    position: relative;
+    overflow: hidden;
+}
+
 #main-section {
     max-width: var(--max-width);
     margin: var(--centered);
     position: relative;
     padding: 0 50px;
+    background: rgba(210, 210, 210, .21);
+    background-size: cover;
+    height: 100vh;
+    z-index: 2;
 }
 
 .main-info__left {
@@ -142,4 +151,38 @@
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 1.5px;
+}
+
+/* Circles details */
+.main-section__circle-1,
+.main-section__circle-2,
+.main-section__circle-3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    max-width: 400px;
+    background: var(--primary-color);
+    border-radius: 100%;
+    filter: blur(150px);
+    box-shadow: 0 0 300px 100px var(--primary-color);
+    z-index: 1;
+}
+
+.main-section__circle-2 {
+    box-shadow: 0 0 400px 200px var(--secondary-color);
+    background: var(--secondary-color);
+    bottom: -300px;
+    left: 400px;
+    top: unset;
+}
+
+.main-section__circle-3 {
+    box-shadow: 0 0 400px 200px var(--third-color);
+    background: var(--third-color);
+    bottom: -200px;
+    left: unset;
+    right: -100px;
+    top: unset;
 }
