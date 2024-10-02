@@ -1,0 +1,118 @@
+.testimonials {
+    background: rgba(210, 210, 210, .12);
+    max-width: var(--max-width);
+    margin: var(--centered);
+    padding: 0 50px;
+    padding-bottom: 150px;
+}
+
+.testimonials__title {
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: var(--font-size-subtitle);
+    letter-spacing: 1.5px;
+    margin-bottom: 120px;
+}
+
+@media(max-width: 576px) {
+    .testimonials__title {
+        font-size: 2em;
+    }
+}
+
+.testimonials__slide {
+    max-width: 1250px;
+    margin: var(--centered);
+}
+
+.testimonials__slide-item {
+    position: relative;
+    max-width: 1000px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--centered);
+    padding: 50px;
+}
+
+.testimonials__slide-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70px;
+    z-index: 3;
+}
+
+.testimonials__slide-text {
+    margin-top: 40px;
+    text-align: center;
+    z-index: 3;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    max-width: 800px;
+}
+
+.testimonials__slide-name {
+    z-index: 3;
+    margin-top: 80px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.testimonials__slide-job {
+    z-index: 3;
+    font-family: "Exo 2", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.testimonials__slide-text:last-child {
+    margin-top: 20px;
+}
+
+.testimonials__slide-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 2;
+}
+
+/* Circles details */
+.surrounds-sections-circle-1,
+.surrounds-sections-circle-2 {
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    background: var(--primary-color);
+    border-radius: 100%;
+    filter: blur(150px);
+    box-shadow: 0 0 500px 300px var(--primary-color);
+    z-index: -1;
+}
+
+.surrounds-sections-circle-2 {
+    box-shadow: 0 0 500px 300px var(--secondary-color);
+    background: var(--secondary-color);
+    bottom: -300px;
+    left: 400px;
+    top: unset;
+}
