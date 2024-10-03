@@ -110,15 +110,15 @@
     width: 100%;
     max-width: 300px;
     height: 300px;
-    background: #ad00ff00;
+    background: #ad00ff;
     border-radius: 100%;
     filter: blur(150px);
-    box-shadow: 0 0 300px 200px #ad00ffbb;
+    box-shadow: 0 0 300px 200px #ae00ff73;
     z-index: -1;
 }
 
 .surrounds-sections-circle-2 {
-    box-shadow: 0 0 300px 200px #0038a8bb;
+    box-shadow: 0 0 300px 200px #0038a8;
     background: #0039a8bf;
     bottom: -300px;
     right: 200px;
