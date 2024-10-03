@@ -25,6 +25,10 @@ body {
     overflow: hidden;
 }
 
+.swiper {
+    overflow: unset!important;
+}
+
 :root {
     --primary-color: #AD00FF;
     --secondary-color: #0039A8;

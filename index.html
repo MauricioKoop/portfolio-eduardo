@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/services.css">
         <link rel="stylesheet" href="css/testimonials.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
     <body>
         
@@ -154,28 +156,63 @@
             
             <section class="testimonials">
                 <h2 class="testimonials__title">O que os clientes dizem</h2>
-                <div class="testimonials__slide">
-                    <!-- slide item 1 -->
-                    <div class="testimonials__slide-item">
-                        <div class="testimonials__slide-logo">
-                            <img src="img/bg-logotipo.png" width="150" height="150">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- slide item 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonials__slide">
+                                <div class="testimonials__slide-item">
+                                    <div class="testimonials__slide-logo">
+                                        <img src="img/bg-logotipo.png" width="150" height="150">
+                                    </div>
+                                    <h3 class="testimonials__slide-name">Fernanda Rusvéer</h3>
+                                    <h4 class="testimonials__slide-job">Terapêuta</h4>
+                                    <p class="testimonials__slide-text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum has been the industry's.industry. Lorem Ipsum has been the industry's. industry's.industry. Lorem Ipsum has
+                                    </p>
+                                    <p class="testimonials__slide-text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum has been the industry's.industry. Lorem Ipsum has been the industry's. industry's.industry. Lorem Ipsum has
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="testimonials__slide-name">Fernanda Rusvéer</h3>
-                        <h4 class="testimonials__slide-job">Terapêuta</h4>
-                        <p class="testimonials__slide-text">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum has been the industry's.industry. Lorem Ipsum has been the industry's. industry's.industry. Lorem Ipsum has
-                        </p>
-                        <p class="testimonials__slide-text">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum has been the industry's.industry. Lorem Ipsum has been the industry's. industry's.industry. Lorem Ipsum has
-                        </p>
+                        <!-- slide item 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonials__slide">
+                                <div class="testimonials__slide-item">
+                                    <div class="testimonials__slide-logo">
+                                        <img src="img/bg-logotipo.png" width="150" height="150">
+                                    </div>
+                                    <h3 class="testimonials__slide-name">MFIT Personal</h3>
+                                    <h4 class="testimonials__slide-job">Terapêuta</h4>
+                                    <p class="testimonials__slide-text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum has been the industry's.industry. Lorem Ipsum has been the industry's. industry's.industry. Lorem Ipsum has
+                                    </p>
+                                    <p class="testimonials__slide-text">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum has been the industry's.industry. Lorem Ipsum has been the industry's. industry's.industry. Lorem Ipsum has
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </section>
+            
             <div class="surrounds-sections-circle-1"></div>
             <div class="surrounds-sections-circle-2"></div>
         </section>
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

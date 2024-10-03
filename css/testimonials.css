@@ -125,3 +125,43 @@
     top: unset;
     left: unset;
 }
+
+
+/* Styles Swiper */
+.swiper-slide {
+    visibility: hidden!important;
+}
+
+.swiper-slide.swiper-slide-active {
+    visibility: visible!important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    position: relative;
+    top: 50px;
+}
+
+.swiper-pagination-bullet-active {
+    background: white!important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white!important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 10px!important;
+    background: rgba(0,0,0, .5);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+}
+
+.swiper-button-next {
+    width: fit-content!important;
+}
