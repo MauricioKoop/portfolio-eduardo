@@ -128,11 +128,11 @@
 
 
 /* Styles Swiper */
-.swiper-slide {
+.testimonials .swiper-slide {
     visibility: hidden!important;
 }
 
-.swiper-slide.swiper-slide-active {
+.testimonials .swiper-slide.swiper-slide-active {
     visibility: visible!important;
 }
 

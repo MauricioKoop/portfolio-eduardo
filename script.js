@@ -11,4 +11,26 @@ $(document).ready(function(){
             prevEl: '.swiper-button-prev',
         },
     });
+
+    // Swipper Tools
+    var swiper = new Swiper(".swiper-tools", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+            el: ".swiper-tools-pagination",
+            clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            400: {
+                slidesPerView: 2
+            },
+            // when window width is >= 480px
+            500: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    });
 })

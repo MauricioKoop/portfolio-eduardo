@@ -125,32 +125,54 @@
     object-fit: cover;
 }
 
-.main-section__tools {
+/* Swipper Tools */
+.swiper-tools {
+    padding-top: 100px;
+    padding-bottom: 80px;
     max-width: 1250px;
     margin: var(--centered);
+}
+
+.swiper-tools {
+    overflow: hidden;
+}
+
+.swiper-slide.swiper-slide-tools {
     display: flex;
-    gap: 30px;
-    padding-bottom: 80px;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media(min-width: 500px) {
+    .swiper-slide.swiper-slide-tools {
+        width: fit-content!important;
+    }
+}
+
+@media(min-width: 640px) {
+    .swiper-tools .swiper-slide {
+        visibility: visible!important;
+    }
 }
 
 @media(max-width: 1250px) {
-    .main-section__tools {
+    .swiper-tools {
         padding-top: 100px;
     }
 }
 
-.main-section__tools-list {
+.swiper-slide__tools-list {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
 }
 
-.main-section__tools-info {
+.swiper-slide__tools-info {
     font-family: "Murecho", sans-serif;
     font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 1.5px;
+    font-size: 15px;
+    letter-spacing: 2px;
 }
 
 /* Circles details */
