@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".testimonials__swiper", {
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
@@ -28,6 +28,28 @@ $(document).ready(function(){
             500: {
                 slidesPerView: 3,
                 spaceBetween: 30
+            }
+        }
+    });
+
+    // Swipper Work Tools
+    var swiper = new Swiper(".work-tools__swiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        autoplay: false,
+        loop: true,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            500: {
+                slidesPerView: 3
+            },
+            // when window width is >= 480px
+            700: {
+                slidesPerView: 4
+            },
+            800: {
+                slidesPerView: 5
             }
         }
     });

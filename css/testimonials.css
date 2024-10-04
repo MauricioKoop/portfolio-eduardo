@@ -1,4 +1,4 @@
-.surrounds-services-testimonials {
+.surrounds-sections {
     position: relative;
     overflow: hidden;
 }
@@ -112,8 +112,8 @@
 }
 
 /* Circles details */
-.surrounds-services-testimonials-circle-1,
-.surrounds-services-testimonials-circle-2 {
+.surrounds-sections-circle-1,
+.surrounds-sections-circle-2 {
     position: absolute;
     bottom: 200px;
     left: -100px;
@@ -127,7 +127,7 @@
     z-index: -1;
 }
 
-.surrounds-services-testimonials-circle-2 {
+.surrounds-sections-circle-2 {
     box-shadow: 0 0 300px 200px #0038a8;
     background: #0039a8bf;
     bottom: -300px;
@@ -146,30 +146,26 @@
     visibility: visible!important;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.testimonials .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     position: relative;
     top: 50px;
 }
 
-.swiper-pagination-bullet-active {
+.testimonials .swiper-pagination-bullet-active {
     background: white!important;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.testimonials .swiper-button-next,
+.testimonials .swiper-button-prev {
     color: white!important;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.testimonials .swiper-button-next::after,
+.testimonials .swiper-button-prev::after {
     font-size: 10px!important;
     background: rgba(0,0,0, .5);
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 80px;
+    padding: 12px 14px;
+    border-radius: 100%;
 }
 
 .swiper-button-next {

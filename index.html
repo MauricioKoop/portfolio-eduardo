@@ -10,12 +10,14 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/services.css">
         <link rel="stylesheet" href="css/testimonials.css">
+        <link rel="stylesheet" href="css/work-tools.css">
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
     <body>
         
-        <div class="surrounds-main-section">
+        <!-- Main section -->
+        <section class="surrounds-main-section">
             <main id="main-section" class="main-section">
                 <header class="main-nav">
                     <ul class="main-nav__block">
@@ -71,9 +73,10 @@
             <div class="main-section__circle-1"></div>
             <div class="main-section__circle-2"></div>
             <div class="main-section__circle-3"></div>
-        </div>
+        </section>
 
-        <section class="surrounds-services-testimonials">
+        <!-- Sections Services and Testimonials -->
+        <section class="surrounds-sections">
             <section class="services">
                 <h2 class="services__title">Alguns Serviços Recentes</h2>
                 <div class="services__content">
@@ -160,7 +163,7 @@
             <section class="testimonials">
                 <h2 class="testimonials__title">O que os clientes dizem</h2>
                 <!-- Swiper -->
-                <div class="swiper mySwiper">
+                <div class="swiper testimonials__swiper">
                     <div class="swiper-wrapper">
                         <!-- slide item 1 -->
                         <div class="swiper-slide">
@@ -206,10 +209,46 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
+
+                <div class="surrounds-sections-circle-1"></div>
+                <div class="surrounds-sections-circle-2"></div>
             </section>
-            
-            <div class="surrounds-services-testimonials-circle-1"></div>
-            <div class="surrounds-services-testimonials-circle-2"></div>
+
+            <!-- Section work tools -->
+            <section class="work-tools">
+                <h2 class="work-tools__title">Ferramentas de trabalho</h2>
+                <!-- Swiper -->
+                <div class="swiper work-tools__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="work-tools__item">
+                                <img src="img/ilustrator.png" width="50" height="50">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="work-tools__item">
+                                <img src="img/photoshop.png" width="50" height="50">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="work-tools__item">
+                                <img src="img/elementor.png" width="50" height="50">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="work-tools__item work-tools__item--figma" width="50" height="50">
+                                <img src="img/figma.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="work-tools__item">
+                                <img src="img/wordpress.png" width="50" height="50">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
         </section>
 
         <!-- jQuery -->
