@@ -126,8 +126,10 @@
 }
 
 /* Swipper Tools */
+#main-section .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    top: 20px;
+}
 .swiper-tools {
-    padding-top: 100px;
     padding-bottom: 80px;
     max-width: 1250px;
     margin: var(--centered);

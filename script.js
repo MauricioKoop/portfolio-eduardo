@@ -16,10 +16,8 @@ $(document).ready(function(){
     var swiper = new Swiper(".swiper-tools", {
         slidesPerView: 1,
         spaceBetween: 0,
-        pagination: {
-            el: ".swiper-tools-pagination",
-            clickable: true,
-        },
+        autoplay: true,
+        loop: true,
         // Responsive breakpoints
         breakpoints: {
             // when window width is >= 320px
