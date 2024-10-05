@@ -33,6 +33,7 @@
     max-width: 1250px;
     margin: var(--centered);
     column-gap: 120px;
+    position: relative;
 }
 
 @media(max-width: 767px) {

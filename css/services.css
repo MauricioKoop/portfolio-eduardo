@@ -116,9 +116,10 @@
     max-width: 1250px;
     margin: var(--centered);
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
+    position: relative;
+    z-index: 25;
 }
 
 @media(max-width: 767px){
