@@ -5,6 +5,12 @@
     padding: 0 50px 200px;
 }
 
+@media(max-width: 576px) {
+    .work-tools {
+        padding: 0 30px 200px;
+    }
+}
+
 .work-tools__title {
     text-align: center;
     font-family: "Exo 2", sans-serif;

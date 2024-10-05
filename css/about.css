@@ -3,6 +3,12 @@
     padding: 0 50px 100px;
 }
 
+@media(max-width: 576px) {
+    .about__section {
+        padding: 0 30px 100px;
+    }
+}
+
 .about {
     background: rgba(210, 210, 210, .12);
     max-width: var(--max-width);

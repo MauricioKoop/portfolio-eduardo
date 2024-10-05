@@ -6,6 +6,12 @@
     padding-bottom: 150px;
 }
 
+@media(max-width: 576px) {
+    .services {
+        padding: 90px 30px 0;
+    }
+}
+
 .services .main-info__button.main-info__button--outline {
     margin: 40px auto 0;
     display: block;
