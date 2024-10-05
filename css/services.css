@@ -4,6 +4,32 @@
     padding: 90px 50px 0;
     background: rgba(210, 210, 210, .12);
     padding-bottom: 150px;
+    position: relative;
+}
+
+.surrounds-sections-circle-3,
+.surrounds-sections-circle-4 {
+    position: absolute;
+    top: 400px;
+    left: 340px;
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    border-radius: 100%;
+    filter: blur(150px);
+    box-shadow: 0 0 300px 200px var(--secondary-color);
+    z-index: -1;
+}
+
+.surrounds-sections-circle-4 {
+    box-shadow: 0 0 300px 200px var(--third-color);
+    background: var(--third-color);
+    right: 0;
+    left: unset;
+    top: unset;
+    right: 400px;
+    bottom: 500px;
 }
 
 @media(max-width: 576px) {
@@ -39,7 +65,7 @@
 
 .services__item {
     padding: 25px;
-    z-index: 2;
+    z-index: 5;
     position: relative;
     max-width: 600px;
     background: rgba( 255, 255, 255, 0.05 );
