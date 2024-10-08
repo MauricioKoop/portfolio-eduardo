@@ -1,6 +1,27 @@
-// Define tipografia
-html {
-    font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;1,500&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Murecho:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #06000B;
+    color: white;
+}
+
+.swiper {
+    overflow: unset!important;
 }
 
 // Centraliza verticalmente qualquer coisa
@@ -15,4 +36,12 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+// Placeholders
+%title {
+    font-family: $font-family-title;
+    font-size: $font-size-title;
+    letter-spacing: $letter-spacing;
+    font-weight: $font-weight-600;
 }

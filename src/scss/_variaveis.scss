@@ -1,8 +1,28 @@
-// Tipografia  
+// Cores principais
+$primary-color: #AD00FF;
+$secondary-color: #0039A8;
+$third-color: #CC07AD;
+
+// Breakpoints
+$bp-small: 576px;
+$bp-medium: 768px;
+$bp-large: 992px;
+$bp-xlarge: 1250px;
+$bp-xxlarge: 1550px;
+
+// Tipografia
 $font-style: normal; 
-$font-variant: normal; 
-$font-weight: normal; 
-$font-color: #222; 
-$font-size: 1rem; 
-$line-height: 1.5; 
-$font-family: Helvetica Neue, Helvetica, Arial;
+$font-weight: normal;
+$font-weight-600: 600;
+$font-color: white;
+$font-size-title: 2.5em;
+$font-size-text: 1em; /* Corresponde ao tamanho de 16px */
+$font-family-title: "Exo 2", sans-serif;
+$font-family-text: "Alegreya Sans", sans-serif;
+$letter-spacing: 1.2px;
+
+// Utilitários
+$max-width: $bp-xxlarge;
+$transition: all .3s linear;
+$border-radius: 25px;
+$centered: 0 auto;
