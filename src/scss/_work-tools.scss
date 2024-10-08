@@ -1,0 +1,70 @@
+.work-tools {
+    background: rgba(210, 210, 210, .12);
+    max-width: $max-width;
+    margin: $centered;
+    padding: 0 50px 200px;
+    position: relative;
+    z-index: 25;
+
+    @media(max-width: $bp-small) {
+        & {
+            padding: 200px 30px 200px;
+        }
+    }
+
+    &__title {
+        @extend %title;
+        margin-bottom: 60px;
+        position: relative;
+        z-index: 25;
+
+        @media(max-width: $bp-small) {
+            & {
+                font-size: 2em;
+            }
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        overflow: hidden !important;
+        max-width: 800px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        position: relative;
+        background-image: url(../../img/bg-work-tools-item.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: var(--transition);
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        width: fit-content;
+
+        &:hover {
+            background-image: url(../../img/bg-work-tools-hover.png);
+            transition: $transition;
+        }
+
+        img {
+            display: block;
+            object-fit: contain;
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        &--figma {
+            width: 130px;
+        }
+    }
+}
