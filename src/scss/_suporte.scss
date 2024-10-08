@@ -38,10 +38,72 @@ body {
     box-sizing: border-box;
 }
 
+// Surround Sections
+.surrounds-sections {
+    position: relative;
+    overflow: hidden;
+
+    &-circle-3,
+    &-circle-4 {
+        position: absolute;
+        top: 400px;
+        left: 340px;
+        width: 100%;
+        max-width: 50px;
+        height: 50px;
+        background: $secondary-color;
+        border-radius: 100%;
+        filter: blur(150px);
+        box-shadow: 0 0 300px 200px $secondary-color;
+        z-index: -1;
+    }
+
+    &-circle-4 {
+        box-shadow: 0 0 300px 200px $third-color;
+        background: $third-color;
+        right: 0;
+        left: unset;
+        top: unset;
+        right: 400px;
+        bottom: 500px;
+    }
+}
+
 // Placeholders
 %title {
     font-family: $font-family-title;
     font-size: $font-size-title;
     letter-spacing: $letter-spacing;
     font-weight: $font-weight-600;
+
+    @media(max-width: $bp-small) {
+        & {
+            font-size: 2em;
+        }
+    }
+}
+
+%button {
+    font-family: $font-family-title;
+    font-weight: $font-weight;
+    font-size: 1.13em;
+    outline: none;
+    background: white;
+    max-width: 180px;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    border-color: transparent;
+    transition: $transition;
+
+    &:hover {
+        box-shadow: 0 0 30px 0px rgba(255,255,255, .3);
+    }
+}
+
+%button-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
 }

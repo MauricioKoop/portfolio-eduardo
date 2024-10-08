@@ -1,0 +1,123 @@
+.services {
+    max-width: $max-width;
+    margin: $centered;
+    padding: 90px 50px 0;
+    background: rgba(210, 210, 210, .12);
+    padding-bottom: 150px;
+    position: relative;
+
+    @media(max-width: $bp-small) {
+        & {
+            padding: 90px 30px 0;
+        }
+    }
+
+    &__title {
+        @extend %title;
+        text-align: center;
+        letter-spacing: 1.5px;
+        margin-bottom: 60px;
+    }
+
+    & .main-info__button.main-info__button--outline {
+        margin: 40px auto 0;
+        display: block;
+    }
+
+    &__content {
+        width: 100%;
+        max-width: $bp-xlarge;
+        margin: $centered;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        position: relative;
+        z-index: 25;
+
+        @media(max-width: $bp-medium){
+            & {
+                flex-wrap: wrap;
+            }
+        }
+
+        .surrounds-services-item {
+            overflow: hidden;
+            position: relative;
+            border-radius: 20px;
+
+            .services__item {
+                padding: 25px;
+                z-index: 5;
+                position: relative;
+                max-width: 600px;
+                background: rgba( 255, 255, 255, 0.05 );
+                box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur( 13px );
+                -webkit-backdrop-filter: blur( 13px );
+                border-radius: 20px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+                @media(max-width: $bp-medium) {
+                    & {
+                        padding: 18px;
+                    }
+                
+                    .services__header-title a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__header {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+            font-family: $font-family-title;
+            font-weight: $font-weight-600;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        &-link {
+            display: block;
+            background: rgba(210, 210, 210, .21);
+            border-radius: 50px;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .space-to-top {
+        margin-top: 30px;
+    }
+
+    &__img {
+        width: fit-content;
+        border-radius: 20px;
+        overflow: hidden;
+
+        & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__button {
+        @extend %button;
+        @extend %button-outline;
+        display: block;
+        margin: $centered;
+        margin-top: 40px;
+    }
+
+}
+

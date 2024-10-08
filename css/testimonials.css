@@ -1,8 +1,3 @@
-.surrounds-sections {
-    position: relative;
-    overflow: hidden;
-}
-
 .testimonials {
     background: rgba(210, 210, 210, .12);
     max-width: var(--max-width);
