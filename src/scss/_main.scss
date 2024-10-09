@@ -37,6 +37,7 @@
 
             &__title {
                 @extend %title;
+                text-align: start;
                 font-size: 3.5em;
                 order: 2;
             }

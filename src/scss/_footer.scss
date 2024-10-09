@@ -75,13 +75,13 @@
         height: 200px;
         background: $primary-color;
         border-radius: 100%;
-        filter: blur(150px);
+        filter: blur(200px);
         box-shadow: 0 0 300px 100px $primary-color;
         z-index: -1;
     }
 
     &__circle-2 {
-        top: 200px;
+        top: 0px;
         left: 500px;
         box-shadow: 0 0 300px 100px $secondary-color;
         background: $secondary-color;
@@ -91,7 +91,7 @@
         left: unset;
         right: 200px;
         top: unset;
-        bottom: 200px;
+        bottom: 600px;
         box-shadow: 0 0 300px 100px $third-color;
         background: $third-color;
     }
