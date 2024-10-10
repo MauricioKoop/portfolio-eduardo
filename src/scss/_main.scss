@@ -1,3 +1,118 @@
+.main-nav-mobile {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 350px;
+    z-index: 50;
+    background: hsla(0, 0%, 14%, 0.4);
+    box-shadow: 0 0 50px 0 hsla(0, 0%, 14%, 0.4);
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 35px;
+        font-family: $font-family-title;
+        letter-spacing: $letter-spacing;
+        font-weight: $font-weight-600;
+
+        a {
+            transition: $transition;
+         &:hover {
+            color: $primary-color;
+            transition: $transition;
+         }   
+        }
+    }
+
+    &__close {
+        outline: none;
+        background: hsla(0, 0%, 14%, 0.4);
+        box-shadow: 0 0 50px 0 hsla(0, 0%, 14%, 0.4);
+        border-radius: 50px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        margin-top: 4px;
+        transition: $transition;
+
+        &:hover {
+            background: hsla(0, 0%, 50%, 0.8);
+            box-shadow: 0 0 50px 0 hsla(0, 0%, 50%, 0.8);
+            transition: $transition;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 18px;
+        font-family: $font-family-text;
+        font-weight: 500;
+        margin-top: 50px;
+    }
+
+    &__link {
+        transition: $transition;
+
+        &:hover {
+            color: $primary-color;
+            transition: $transition;
+            padding-left: 3px;
+        }
+    }
+
+    &__socials {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+
+        &-block {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
+
+        &-link {
+            background: rgba( 255, 255, 255, 0.05 );
+            box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur( 13px );
+            -webkit-backdrop-filter: blur( 13px );
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            transition: $transition;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: $transition;
+            }
+        }
+    }
+
+    &__socials-title {
+        @extend .visually-hidden;
+    }
+}
+
 .surrounds-main-section {
     position: relative;
     overflow: hidden;
