@@ -124,6 +124,10 @@
             margin: $centered;
             overflow: hidden;
 
+            #tools-title {
+                @extend .visually-hidden;
+            }
+
             @media(min-width: 640px) {
                 & .swiper-slide {
                     visibility: visible!important;

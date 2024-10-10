@@ -16,26 +16,26 @@
         <!-- Main section -->
         <section class="surrounds-main-section">
             <main id="main-section" class="main-section">
-                <header class="main-nav">
+                <header class="main-nav" role="navigation" aria-label="Navegação principal">
                     <ul class="main-nav__block">
                         <li class="main-nav__list">
-                            <a href="#" class="main-nav__link">Inicio</a>
+                            <a href="#" class="main-nav__link" aria-label="Rolar até a página inicial">Inicio</a>
                         </li>
                         <li class="main-nav__list">
-                            <a href="#" class="main-nav__link">Sobre</a>
+                            <a href="#" class="main-nav__link" aria-label="Rolar até a página inicial">Sobre</a>
                         </li>
                         <li class="main-nav__list">
-                            <a href="#" class="main-nav__link">Projetos</a>
+                            <a href="#" class="main-nav__link" aria-label="Rolar até a página projetos">Projetos</a>
                         </li>
                         <li class="main-nav__list">
-                            <a href="#" class="main-nav__link">Contato</a>
+                            <a href="#" class="main-nav__link" aria-label="Rolar até a página contato">Contato</a>
                         </li>
                     </ul>
                 </header>
 
-                <div class="main-info">
+                <div class="main-info" aria-labelledby="main-info-title">
                     <div class="main-info__left">
-                        <h1 class="main-info__title">Desenvolvedor Web</h1>
+                        <h1 id="main-info-title" class="main-info__title">Desenvolvedor Web</h1>
                         <h2 class="main-info__subtitle">Olá, eu sou Mauricio</h2>
                         <p class="main-info__text">Lorem Ipsumis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
                         <div class="main-info__buttons">
@@ -49,8 +49,9 @@
                 </div>
 
                 <!-- Swiper -->
-                <div class="swiper-tools">
+                <div class="swiper-tools" aria-labelledby="tools-title">
                     <div class="swiper-wrapper">
+                        <h3 id="tools-title">Ferramentas que utilizo</h3>
                         <div class="swiper-slide swiper-slide-tools">
                             <img src="img/figma-cinza.png" alt="icone figma" class="swiper-slide__tools-img">
                             <p class="swiper-slide__tools-info">Figma</p>
@@ -74,8 +75,8 @@
 
         <!-- Sections Services and Testimonials -->
         <section class="surrounds-sections">
-            <section class="services">
-                <h2 class="services__title">Alguns Serviços Recentes</h2>
+            <section class="services" aria-labelledby="services-title">
+                <h2 id="services-title" class="services__title">Alguns Serviços Recentes</h2>
                 <div class="services__content">
                     <div class="services__content-left">
                         <!-- Item 1 -->
@@ -159,17 +160,17 @@
                 <div class="surrounds-sections-circle-4"></div>
             </section>
             
-            <section class="testimonials">
-                <h2 class="testimonials__title">O que os clientes dizem</h2>
+            <section class="testimonials" aria-labelledby="testimonials-title">
+                <h2 id="testimonials-title" class="testimonials__title">O que os clientes dizem</h2>
                 <!-- Swiper -->
-                <div class="swiper testimonials__swiper">
+                <div class="swiper testimonials__swiper" aria-live="polite">
                     <div class="swiper-wrapper">
                         <!-- slide item 1 -->
                         <div class="swiper-slide">
                             <div class="testimonials__slide">
                                 <div class="testimonials__slide-item">
                                     <div class="testimonials__slide-logo">
-                                        <img src="img/bg-logotipo.png" width="150" height="150">
+                                        <img src="img/bg-logotipo.png" width="150" height="150" alt="logotipo da cliente Fernanda Rusvéer">
                                     </div>
                                     <h3 class="testimonials__slide-name">Fernanda Rusvéer</h3>
                                     <h4 class="testimonials__slide-job">Terapêuta</h4>
@@ -187,7 +188,7 @@
                             <div class="testimonials__slide">
                                 <div class="testimonials__slide-item">
                                     <div class="testimonials__slide-logo">
-                                        <img src="img/bg-logotipo.png" width="150" height="150">
+                                        <img src="img/bg-logotipo.png" width="150" height="150" alt="logotipo da cliente MFIT Personal">
                                     </div>
                                     <h3 class="testimonials__slide-name">MFIT Personal</h3>
                                     <h4 class="testimonials__slide-job">Terapêuta</h4>
@@ -203,8 +204,8 @@
                     </div>
 
                     <!-- navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev" aria-label="Slide anterior"></div>
+                    <div class="swiper-button-next" aria-label="Próximo slide"></div>
                 </div>
 
                 <div class="surrounds-sections-circle-1"></div>
@@ -212,34 +213,34 @@
             </section>
 
             <!-- Section work tools -->
-            <section class="work-tools">
-                <h2 class="work-tools__title">Ferramentas de trabalho</h2>
+            <section class="work-tools" aria-labelledby="work-tools">
+                <h2 id="work-tools" class="work-tools__title">Ferramentas de trabalho</h2>
                 <!-- Swiper -->
                 <div class="swiper work-tools__swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="work-tools__item">
-                                <img src="img/ilustrator.png" width="50" height="50">
+                                <img src="img/ilustrator.png" width="50" height="50" alt="icone da ferramenta ilustrator">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="work-tools__item">
-                                <img src="img/photoshop.png" width="50" height="50">
+                                <img src="img/photoshop.png" width="50" height="50" alt="icone da ferramenta photoshop">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="work-tools__item">
-                                <img src="img/elementor.png" width="50" height="50">
+                                <img src="img/elementor.png" width="50" height="50" alt="icone da ferramenta elementor">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="work-tools__item work-tools__item--figma" width="50" height="50">
-                                <img src="img/figma.png">
+                                <img src="img/figma.png" alt="icone da ferramenta figma">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="work-tools__item">
-                                <img src="img/wordpress.png" width="50" height="50">
+                                <img src="img/wordpress.png" width="50" height="50" alt="icone da ferramenta wordpress">
                             </div>
                         </div>
                     </div>
@@ -248,12 +249,12 @@
             </section>
 
             <!-- Section about -->
-            <section class="about__section">
-                <h2 class="about__title">Sobre o Maurício</h2>
-                <section class="about__content">
+            <section class="about__section" aria-labelledby="about-title">
+                <h2 id="about-title" class="about__title">Sobre o Maurício</h2>
+                <section class="about__content" aria-describedby="about-description">
                     <div class="about__content-top">
                         <div class="about__content-info">
-                            <p class="about__content-text">
+                            <p id="about-description" class="about__content-text">
                                 Lorem Ipsumis simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. Lorem Ipsum has been the industry's.industry. Lorem Ipsum has been the industry's. industry's.industry. Lorem Ipsum has 
                             </p>
                             <p class="about__content-text">
@@ -263,17 +264,18 @@
                         <div class="about__content-logo">
                         </div>
                     </div>
-                    <div class="about__content-bottom">
-                        <div class="about__content-item">
-                            <p class="about__content-item-info">2</p>
+                    <div class="about__content-bottom" role="group" aria-labelledby="experience-title">
+                        <h3 id="experience-title">Experiência e Projetos</h3>
+                        <div class="about__content-item" aria-labelledby="experience-item-1">
+                            <p id="experience-item-1" class="about__content-item-info">2</p>
                             <p class="about__content-item-info-2">Anos de experiência</p>
                         </div>
-                        <div class="about__content-item">
-                            <p class="about__content-item-info">5</p>
+                        <div class="about__content-item" aria-labelledby="experience-item-2">
+                            <p id="experience-item-2" class="about__content-item-info">5</p>
                             <p class="about__content-item-info-2">Projetos Realizados</p>
                         </div>
-                        <div class="about__content-item">
-                            <p class="about__content-item-info">100%</p>
+                        <div class="about__content-item" aria-labelledby="experience-item-3">
+                            <p id="experience-item-3" class="about__content-item-info">100%</p>
                             <p class="about__content-item-info-2">Clientes Satisfeitos</p>
                         </div>
                     </div>
@@ -286,8 +288,8 @@
                 <div class="footer__circle-3"></div>
 
                 <div class="footer__content">
-                    <h2 class="footer__title">Redes sociais e contato</h2>
-                    <div class="footer__socials">
+                    <h2 id="footer-title" class="footer__title">Redes sociais e contato</h2>
+                    <div class="footer__socials" aria-labelledby="footer-title">
                         <a href="https://github.com/" class="footer__socials-link">
                             <img src="img/github.png" alt="perfi github" width="26" height="26" class="footer__socials-icon">
                         </a>
