@@ -194,6 +194,7 @@
                     flex-wrap: wrap;
                     gap: 100px;
                     padding-top: 100px;
+                    justify-content: start;
                 }
             }
 
@@ -271,6 +272,12 @@
             &__img {
                 width: 100%;
                 object-fit: cover;
+
+                @media(max-width: $bp-medium) {
+                    & {
+                        display: none;
+                    }
+                }
             }
         }
 
@@ -296,9 +303,15 @@
                 }
             }
 
-            @media(max-width: $bp-xlarge) {
+            @media(min-width: $bp-medium) {
                 & {
                     padding-top: 100px;
+                }
+            }
+
+            @media(min-width: $bp-xlarge) {
+                & {
+                    padding-top: 0;
                 }
             }
         }
