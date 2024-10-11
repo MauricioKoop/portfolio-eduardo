@@ -92,6 +92,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: $transition;
+
+            &:hover {
+                background: rgba(112, 112, 112, 0.21);
+                transition: $transition;
+            }
         }
     }
 
