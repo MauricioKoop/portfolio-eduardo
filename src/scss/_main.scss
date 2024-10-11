@@ -10,9 +10,17 @@
     box-shadow: 0 0 50px 0 hsla(0, 0%, 14%, 0.4);
     backdrop-filter: blur( 13px );
     -webkit-backdrop-filter: blur( 13px );
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 30px;
+    transition: $transition;
+    visibility: visible;
+
+    &[aria-hidden="true"] {
+        visibility: hidden;
+        transition: $transition;
+        left: -350px;
+    }
 
     &__header {
         display: flex;
@@ -37,22 +45,29 @@
 
     &__close {
         outline: none;
-        background: hsla(0, 0%, 14%, 0.4);
-        box-shadow: 0 0 50px 0 hsla(0, 0%, 14%, 0.4);
-        border-radius: 50px;
         border: none;
-        color: white;
-        font-weight: bold;
-        height: 30px;
-        width: 30px;
         cursor: pointer;
-        margin-top: 4px;
-        transition: $transition;
+        background: none;
 
-        &:hover {
-            background: hsla(0, 0%, 50%, 0.8);
-            box-shadow: 0 0 50px 0 hsla(0, 0%, 50%, 0.8);
+        span {
+            display: block;
+            background: hsla(0, 0%, 14%, 0.4);
+            border-radius: 50px;
+            height: 35px;
+            width: 35px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8px;
             transition: $transition;
+
+            &:hover {
+                background: hsla(0, 0%, 14%, 0.6);
+                box-shadow: 0 0 20px 0 hsla(0, 0%, 40%, 0.6);
+                transition: $transition;
+            }
         }
     }
 
@@ -88,17 +103,17 @@
         }
 
         &-link {
-            background: rgba( 255, 255, 255, 0.05 );
-            box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.05);
+            background: hsla(0, 0%, 14%, 0.4);
+            box-shadow: 0 0 50px 0 hsla(0, 0%, 14%, 0.4);
             backdrop-filter: blur( 13px );
             -webkit-backdrop-filter: blur( 13px );
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            border: 1px solid hsla(0, 0%, 24%, 0.8);
             border-radius: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 50px;
-            width: 50px;
+            height: 40px;
+            width: 40px;
             transition: $transition;
 
             &:hover {
@@ -116,6 +131,38 @@
 .surrounds-main-section {
     position: relative;
     overflow: hidden;
+
+    .btn-open-mobile {
+        position: fixed;
+        right: 30px;
+        top: 30px;
+        outline: none;
+        border: none;
+        background: hsla(0, 0%, 14%, 0.4);
+        border-radius: 50px;
+        height: 35px;
+        width: 35px;
+        cursor: pointer;
+        color: white;
+        z-index: 50;
+        font-size: 16px;
+        margin-top: 8px;
+        z-index: 49;
+        display: none;
+        transition: $transition;
+
+        &:hover {
+            background: hsla(0, 0%, 14%, 0.6);
+            box-shadow: 0 0 20px 0 hsla(0, 0%, 40%, 0.6);
+            transition: $transition;
+        }
+
+        @media(max-width: $bp-medium) {
+            & {
+                display: block;
+            }
+        }
+    }
 
     .main-section {
         max-width: $max-width;

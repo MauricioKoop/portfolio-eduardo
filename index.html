@@ -13,12 +13,15 @@
     </head>
     <body>
 
-        <div class="main-nav-mobile">
+        <!-- Menu Mobile -->
+        <div class="main-nav-mobile" id="menu-mobile" aria-hidden="true">
             <div class="main-nav-mobile__header">
                 <h2 id="main-nav-mobile-title" class="main-nav-mobile__title">
                     <a href="#">Portfólio</a>
                 </h2>
-                <button type="button" class="main-nav-mobile__close">X</button>
+                <button type="button" class="main-nav-mobile__close" aria-label="botão fechar">
+                    <span>&#x2716;</span>
+                </button>
             </div>
             
             <ul class="main-nav-mobile__block" aria-labelledby="main-nav-mobile-title">
@@ -40,13 +43,13 @@
                 <h2 id="main-socials-title" class="main-nav-mobile__socials-title">Redes sociais e contato</h2>
                 <div class="main-nav-mobile__socials-block" aria-labelledby="main-socials-title">
                     <a href="https://github.com/" class="main-nav-mobile__socials-link">
-                        <img src="img/github.png" alt="perfi github" width="24" height="24" class="main-nav-mobile__socials-icon">
+                        <img src="img/github.png" alt="perfi github" width="18" height="18" class="main-nav-mobile__socials-icon">
                     </a>
                     <a href="https://www.linkedin.com/in/mauricio-eduardo-0b988912b/" class="main-nav-mobile__socials-link">
-                        <img src="img/linkedin.png" alt="perfi github" width="24" height="24" class="main-nav-mobile__socials-icon">
+                        <img src="img/linkedin.png" alt="perfi github" width="18" height="18" class="main-nav-mobile__socials-icon">
                     </a>
                     <a href="#" class="main-nav-mobile__socials-link">
-                        <img src="img/instagram.png" alt="perfi github" width="24" height="24" class="main-nav-mobile__socials-icon">
+                        <img src="img/instagram.png" alt="perfi github" width="18" height="18" class="main-nav-mobile__socials-icon">
                     </a>
                 </div>
             </div>
@@ -54,6 +57,10 @@
         
         <!-- Main section -->
         <section class="surrounds-main-section">
+            <button type="button" class="btn-open-mobile" aria-expanded="false" aria-controls="menu-mobile">
+                <span>&#9776</span>
+            </button>
+
             <main id="main-section" class="main-section">
                 <header class="main-nav" role="navigation" aria-label="Navegação principal">
                     <ul class="main-nav__block">

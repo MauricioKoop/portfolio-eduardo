@@ -1,4 +1,27 @@
 $(document).ready(function(){
+    // Open menu mobile
+    var btnOpenMobile = $('.btn-open-mobile');
+    var menuMobile = $('#menu-mobile');
+    var closeMenuMobile = $('.main-nav-mobile__close');
+
+    btnOpenMobile.on('click', controlsMobileMenu);
+
+    closeMenuMobile.on('click', () => {
+        controlsMobileMenu();
+    })
+
+    function controlsMobileMenu() {
+        if (btnOpenMobile.attr('aria-expanded') == 'false') {
+            // It’s currently closed, so open it
+            btnOpenMobile.attr('aria-expanded', true);
+            menuMobile.attr('aria-hidden', false);
+        } else {
+            // It’s currently open, so close it
+            btnOpenMobile.attr('aria-expanded', false);
+            menuMobile.attr('aria-hidden', true);
+        }
+    }
+
     var swiper = new Swiper(".testimonials__swiper", {
         // Navigation arrows
         navigation: {
