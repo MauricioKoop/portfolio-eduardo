@@ -55,6 +55,18 @@ $(document).ready(function(){
     scrollToSection(mainNavLink);
 
     // Esconde a barra de navegação quando houver scroll down, exibe com scrollUp
+    let prevScroll = 0;
+    const header = $('.main-nav');
+
+    $(window).on('scroll', () => {
+        let currentScroll = window.scrollY;
+        if(prevScroll > currentScroll){
+            header.css('top', '0');
+        }else{
+            header.css('top', '-100px');
+        }
+        prevScroll = currentScroll;
+    })
 
     var swiper = new Swiper(".testimonials__swiper", {
         // Navigation arrows
