@@ -5,7 +5,7 @@
     bottom: 0;
     right: 0;
     max-width: 350px;
-    z-index: 50;
+    z-index: 61;
     background: hsla(0, 0%, 14%, 0.4);
     box-shadow: 0 0 50px 0 hsla(0, 0%, 14%, 0.4);
     backdrop-filter: blur( 13px );
@@ -144,10 +144,10 @@
         width: 35px;
         cursor: pointer;
         color: white;
-        z-index: 50;
+        z-index: 62;
         font-size: 16px;
         margin-top: 8px;
-        z-index: 49;
+        z-index: 100;
         display: none;
         transition: $transition;
 
@@ -171,7 +171,7 @@
         padding: 0 50px;
         background: rgba(210, 210, 210, .21);
         background-size: cover;
-        z-index: 2;
+        z-index: 60;
 
         @media(max-width: $bp-small) {
             & {

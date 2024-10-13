@@ -54,6 +54,8 @@ $(document).ready(function(){
     scrollToSection(navMobileLink);
     scrollToSection(mainNavLink);
 
+    // Esconde a barra de navegação quando houver scroll down, exibe com scrollUp
+
     var swiper = new Swiper(".testimonials__swiper", {
         // Navigation arrows
         navigation: {
