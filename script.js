@@ -22,6 +22,20 @@ $(document).ready(function(){
         }
     }
 
+    // close mobile menu
+    let navMobileLink = $('.main-nav-mobile__link');
+
+    $.each(navMobileLink, (index, element) => {
+        let link = $(element);
+
+        link.on('click', (e) => {
+            e.preventDefault();
+            let curretnLink = $(e.target);
+            let hrefCurrentLink = curretnLink.attr('href');
+            console.log(hrefCurrentLink);
+        })
+    })
+
     var swiper = new Swiper(".testimonials__swiper", {
         // Navigation arrows
         navigation: {
