@@ -24,25 +24,35 @@ $(document).ready(function(){
 
     // close mobile menu
     let navMobileLink = $('.main-nav-mobile__link');
+    let mainNavLink = $('.main-nav__link');
 
-    $.each(navMobileLink, (index, element) => {
-        let link = $(element);
-
-        link.on('click', (e) => {
-            e.preventDefault();
-            let curretnLink = $(e.target);
-            let hrefCurrentLink = curretnLink.attr('href');
-            let elSection = $(hrefCurrentLink);
-            let elSectionTop = elSection.offset().top;
-
-            $('html, body').animate({
-                scrollTop: elSectionTop
-            }, 800);
-
-            // Depois de scrollar fecha o menu mobile
-            controlsMobileMenu();
+    function scrollToSection(linksOfMenu){
+        $.each(linksOfMenu, (index, element) => {
+            let link = $(element);
+    
+            link.on('click', (e) => {
+                e.preventDefault();
+                let curretnLink = $(e.target);
+                let hrefCurrentLink = curretnLink.attr('href');
+                let elSection = $(hrefCurrentLink);
+                let elSectionTop = elSection.offset().top;
+                let elNodeName = $(curretnLink).parent().parent().parent()[0].nodeName;
+                console.log(elNodeName);
+    
+                $('html, body').animate({
+                    scrollTop: elSectionTop
+                }, 800);
+                
+                // Depois de scrollar fecha o menu mobile se for o menu mobile que estiver sendo interagido com o usuário
+                if(elNodeName != "HEADER"){
+                    controlsMobileMenu();
+                }
+            })
         })
-    })
+    }
+
+    scrollToSection(navMobileLink);
+    scrollToSection(mainNavLink);
 
     var swiper = new Swiper(".testimonials__swiper", {
         // Navigation arrows
