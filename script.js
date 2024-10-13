@@ -32,7 +32,15 @@ $(document).ready(function(){
             e.preventDefault();
             let curretnLink = $(e.target);
             let hrefCurrentLink = curretnLink.attr('href');
-            console.log(hrefCurrentLink);
+            let elSection = $(hrefCurrentLink);
+            let elSectionTop = elSection.offset().top;
+
+            $('html, body').animate({
+                scrollTop: elSectionTop
+            }, 800);
+
+            // Depois de scrollar fecha o menu mobile
+            controlsMobileMenu();
         })
     })
 
